@@ -17,6 +17,6 @@ class EmailParser
   email_array = []
   email_array = @emails.split(",").map(&:strip)
   email_array
-  binding.pry
+  #binding.pry
   end
 end
