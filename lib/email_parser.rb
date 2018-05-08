@@ -15,8 +15,8 @@ class EmailParser
 
   def parse
   email_array = []
-  email_array = @emails.split.(" ")
-  email_array
-  binding.pry
+  email_array = @emails.split(/[\s,]+/).map(&:strip)
+  email_array.uniq
+  #binding.pry
   end
 end
