@@ -15,7 +15,7 @@ class EmailParser
 
   def parse
   email_array = []
-  email_array << @emails.split.(" ")
+  email_array = @emails.split.(" ")
   email_array
   binding.pry
   end
